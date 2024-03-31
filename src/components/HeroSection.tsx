@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -34,10 +35,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
+          <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl"></p>
           <div>
             <Link
               href="/#contact"
@@ -49,9 +47,11 @@ const HeroSection = () => {
               href="/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
+              <button
+                className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+              >
+                Download Resume
+              </button>
             </Link>
           </div>
         </motion.div>
