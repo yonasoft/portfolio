@@ -67,7 +67,7 @@ const HeroSection = () => {
               <motion.button
                 onMouseEnter={() => onHover(true)}
                 onMouseLeave={() => onHover(false)}
-                className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+                className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-6 py-2"
               >
                 Download Resume
                 {showResumeOptions && (
@@ -77,10 +77,10 @@ const HeroSection = () => {
                     animate={showResumeOptions ? "visible" : "hidden"}
                     className="flex flex-row justify-around"
                   >
-                    <span className="border p-1 my-2 rounded-md hover:bg-slate-400">
+                    <span className="border-2 p-1 my-2 rounded-md hover:bg-slate-400">
                       <IoLogoAndroid size={24} />
                     </span>
-                    <span className="border p-1 my-2 rounded-md hover:bg-slate-400">
+                    <span className="border-2 p-1 my-2 rounded-md hover:bg-slate-400">
                       <IoBrowsers size={24} />
                     </span>
                   </motion.div>
@@ -97,7 +97,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full object-cover overflow-hidden bg-[#181818] w-[250px] h-[250px] lg:w-[375px] lg:h-[375px] relative">
             <Image
-              src="/kevin_chen.jpg"
+              src="/images/kevin_chen.jpg"
               alt="hero image"
               className="absolute transform -translate-x-1/3 -translate-y-1/3 top-1/2 left-1/3 "
               width={300}

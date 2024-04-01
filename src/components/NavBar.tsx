@@ -8,9 +8,9 @@ import MenuOverlay from "./MenuOverlay";
 type Props = {};
 
 const navLinks = [
-  { href: "/about", title: "About" },
-  { href: "/projects", title: "Projects" },
-  { href: "/contact", title: "Contact" },
+  { href: "#about", title: "About" },
+  { href: "#projects", title: "Projects" },
+  { href: "#contact", title: "Contact" },
 ];
 
 const NavBar = (props: Props) => {

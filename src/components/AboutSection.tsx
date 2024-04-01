@@ -62,10 +62,10 @@ const AboutSection = (props: Props) => {
   };
 
   return (
-    <section className="text-white">
+    <section className="about text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          src="/about.jpg"
+          src="/images/about.jpg"
           width={500}
           height={500}
           alt="image of computer"
