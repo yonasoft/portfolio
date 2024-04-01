@@ -10,7 +10,7 @@ const projectsData = [
     title: "Jade Chinese Dictionary (Android)",
     description:
       "An Android Chinese English dictionary application with over 121,000 words, featuring listing and practice functionality to assist with vocabulary retention. Adapted from the web version including all key features.",
-    image: "/images/projects/jade-web.png",
+    image: "/images/projects/jade-android.png",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-android",
     tag: ["All", "Mobile"],
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: "JadeDictionary.com (Web)",
     description:
       "A web Chinese English dictionary application with over 121,000 words, with listing and practice functionality to assist with vocabulary retention. Also features built-in Chinese keyboard and handwriting input for user convenience.",
-    image: "/images/projects/jade-android.jpg",
+    image: "/images/projects/jade-web.jpg",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-web",
     previewUrl: "https://jadedictionary.com/",
     tag: ["All", "Web"],
