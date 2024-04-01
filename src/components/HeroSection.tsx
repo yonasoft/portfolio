@@ -61,7 +61,7 @@ const HeroSection = () => {
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
-              Contact Me
+              ContactMe
             </Link>
             <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
               <motion.button
@@ -77,12 +77,20 @@ const HeroSection = () => {
                     animate={showResumeOptions ? "visible" : "hidden"}
                     className="flex flex-row justify-around"
                   >
-                    <span className="border-2 p-1 my-2 rounded-md hover:bg-slate-400">
+                    <Link
+                      href="https://www.dropbox.com/scl/fi/ru3lenlw4kdn21m4yy2zk/Kevin_Chen_Resume.pdf?rlkey=gz1ckc0i8n1uqs0komz73hhd8&dl=1"
+                      target="_blank"
+                      className="border-2 p-1 my-2 rounded-md hover:bg-slate-400"
+                    >
                       <IoLogoAndroid size={24} />
-                    </span>
-                    <span className="border-2 p-1 my-2 rounded-md hover:bg-slate-400">
+                    </Link>
+                    <Link
+                      href="https://www.dropbox.com/scl/fi/9jr2zggh8y1fuykxv2fsq/Kevin_Chen_Resume.pdf?rlkey=snxzlys3176vkrmqmnuuygq3p&dl=1"
+                      target="_blank"
+                      className="border-2 p-1 my-2 rounded-md hover:bg-slate-400"
+                    >
                       <IoBrowsers size={24} />
-                    </span>
+                    </Link>
                   </motion.div>
                 )}
               </motion.button>
