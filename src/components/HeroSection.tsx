@@ -1,11 +1,31 @@
 "use client";
-import React from "react";
+import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { IoBrowsers, IoLogoAndroid } from "react-icons/io5";
 import Link from "next/link";
 
 const HeroSection = () => {
+  const [showResumeOptions, setShowResumeOptions] = useState(false);
+  const [isPending, startTransition] = useTransition();
+  const onHover = (isShow: boolean) => {
+    startTransition(() => {
+      setShowResumeOptions(isShow);
+    });
+  };
+  const resumeOptionsVariants = {
+    hidden: {
+      opacity: 0,
+      height: 0,
+      transition: { duration: 0.3 },
+    },
+    visible: {
+      opacity: 1,
+      height: "auto", // Adjust as needed, or use specific height
+      transition: { duration: 0.3 },
+    },
+  };
 
   return (
     <section className="lg:py-16">
@@ -43,16 +63,30 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <button
+            <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
+              <motion.button
+                onMouseEnter={() => onHover(true)}
+                onMouseLeave={() => onHover(false)}
                 className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
               >
                 Download Resume
-              </button>
-            </Link>
+                {showResumeOptions && (
+                  <motion.div
+                    variants={resumeOptionsVariants}
+                    initial="hidden"
+                    animate={showResumeOptions ? "visible" : "hidden"}
+                    className="flex flex-row justify-around"
+                  >
+                    <span className="border p-1 my-2 rounded-md hover:bg-slate-400">
+                      <IoLogoAndroid size={24} />
+                    </span>
+                    <span className="border p-1 my-2 rounded-md hover:bg-slate-400">
+                      <IoBrowsers size={24} />
+                    </span>
+                  </motion.div>
+                )}
+              </motion.button>
+            </div>
           </div>
         </motion.div>
         <motion.div
