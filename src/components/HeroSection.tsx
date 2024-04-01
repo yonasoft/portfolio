@@ -34,10 +34,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 w-full place-self-center text-center sm:text-left"
+          className="col-span-8 w-full place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
-            <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+          <h1 className="text-white max-w-2xl mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
@@ -61,7 +61,7 @@ const HeroSection = () => {
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              Contact Me
             </Link>
             <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
               <motion.button

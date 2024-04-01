@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Jade Chinese Dictionary (Android)",
     description:
-      "An Android Chinese English dictionary application with over 121,000 words, featuring listing and practice modules to assist with vocabulary retention. Adapted from the web version including all key features.",
+      "An Android Chinese English dictionary application with over 121,000 words, featuring listing and practice functionality to assist with vocabulary retention. Adapted from the web version including all key features.",
     image: "/images/about.jpg",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-android",
     tag: ["All", "Mobile"],
@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "JadeDictionary.com (Web)",
     description:
-      "A web Chinese English dictionary application with over 121,000 words, featuring listing and practice modules to assist with vocabulary retention. Also features built-in Chinese keyboard and handwriting input elimiationg the need for user installation.",
+      "A web Chinese English dictionary application with over 121,000 words, with listing and practice functionality to assist with vocabulary retention. Also features built-in Chinese keyboard and handwriting input for user convenience.",
     image: "",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-web",
     previewUrl: "https://jadedictionary.com/",
@@ -28,7 +28,7 @@ const projectsData = [
     id: 3,
     title: "miniMAL",
     description:
-      "An Android application that provides information on over 80,000 Anime and Manga titles from MyAnimeList.net's API. Users can search for titles, view details, rankings, and sort by season.",
+      "An Android application that provides information on over 80,000 Anime and Manga titles. Users can search for titles, view details, rankings, and sort by season.",
     image: "",
     gitUrl: "https://github.com/yonasoft/miniMAL",
     tag: ["All", "Mobile"],
@@ -37,7 +37,7 @@ const projectsData = [
     id: 4,
     title: "AniTier.com",
     description:
-      "A full stack web application for ranking Anime and Manga titles from a library of over 110,000 titles and import from user lists of over 6 million users. You can also share and upvote/downvote lists.",
+      "A web application for ranking Anime and Manga titles from a library of over 110,000 titles and import from user lists of over 6 million users. You can also share and upvote/downvote lists.",
     image: "",
     gitUrl: "https://github.com/yonasoft/AniTier",
     previewUrl: "https://www.anitier.com/",
@@ -60,10 +60,10 @@ type Props = {};
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
- const ref = useRef(null);
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag:string) => {
+  const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" ref={ref}>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>

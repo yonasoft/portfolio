@@ -74,7 +74,7 @@ const AboutSection = (props: Props) => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg ">
             I am an Android developer with web experience and I have a passion
-            for combing code with my hobbies and interests. I have experience
+            for combining code with my hobbies and interests. I have experience
             with Jetpack Compose, RoomDB, Dagger-Hilt, React, Next.js, Ruby on
             Rails, Tailwind, Bootstrap, Firebase, Git and more. I am always
             learning new technologies, and I am excited to work on new projects.
