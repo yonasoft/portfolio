@@ -8,9 +8,10 @@ export const POST = async (req: any, res: any) => {
   const { email, subject, message } = await req.json();
 
   const receiver = "chenkevin1119@gmail.com";
-  const toEmails: string[] = [email, receiver, fromEmail];
+  const toEmails: string[] = [email, receiver];
 
   try {
+    console.log("Sending email...", email, subject, message);
     const data = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
       to: toEmails,
@@ -20,9 +21,10 @@ export const POST = async (req: any, res: any) => {
       Subject: ${subject} \n
       Message: ${message}`,
     });
-    return NextResponse.json(data);
+    const resp = NextResponse.json(data);
+    return resp;
   } catch (error) {
-    return NextResponse.json({ error });
+    const e = NextResponse.json({ error });
+    return e;
   }
 };
-
