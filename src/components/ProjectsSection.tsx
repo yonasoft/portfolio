@@ -10,7 +10,7 @@ const projectsData = [
     title: "Jade Chinese Dictionary (Android)",
     description:
       "An Android Chinese English dictionary application with over 121,000 words, featuring listing and practice functionality to assist with vocabulary retention. Adapted from the web version including all key features.",
-    image: "/images/about.jpg",
+    image: "/images/projects/jade-web.png",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-android",
     tag: ["All", "Mobile"],
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: "JadeDictionary.com (Web)",
     description:
       "A web Chinese English dictionary application with over 121,000 words, with listing and practice functionality to assist with vocabulary retention. Also features built-in Chinese keyboard and handwriting input for user convenience.",
-    image: "",
+    image: "/images/projects/jade-android.jpg",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-web",
     previewUrl: "https://jadedictionary.com/",
     tag: ["All", "Web"],
@@ -29,7 +29,7 @@ const projectsData = [
     title: "miniMAL",
     description:
       "An Android application that provides information on over 80,000 Anime and Manga titles. Users can search for titles, view details, rankings, and sort by season.",
-    image: "",
+    image: "/images/projects/minimal.jpg",
     gitUrl: "https://github.com/yonasoft/miniMAL",
     tag: ["All", "Mobile"],
   },
@@ -38,7 +38,7 @@ const projectsData = [
     title: "AniTier.com",
     description:
       "A web application for ranking Anime and Manga titles from a library of over 110,000 titles and import from user lists of over 6 million users. You can also share and upvote/downvote lists.",
-    image: "",
+    image: "/images/projects/anitier.png",
     gitUrl: "https://github.com/yonasoft/AniTier",
     previewUrl: "https://www.anitier.com/",
     tag: ["All", "Web"],
@@ -48,7 +48,7 @@ const projectsData = [
     title: "Handball Court Manager",
     description:
       "An Android application for handball players to digitally manage and track handball court queues and match data.",
-    image: "",
+    image: "/images/projects/handball.png",
     gitUrl: "https://github.com/yonasoft/Wall-Handball-Court-Manager",
     previewUrl:
       "https://play.google.com/store/apps/details?id=com.yonasoft.handballcourtmanager",

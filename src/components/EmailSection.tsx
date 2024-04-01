@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import Error from "next/error";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -8,40 +7,38 @@ import { FaGithub, FaLinkedin, FaLink } from "react-icons/fa";
 type Props = {};
 
 const EmailSection = (props: Props) => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-	 const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
 
-   const handleSubmit = async (e:any) => {
-     e.preventDefault();
-     const data = {
-       email: e.target.email.value,
-       subject: e.target.subject.value,
-       message: e.target.message.value,
-     };
-     const JSONdata = JSON.stringify(data);
-     const endpoint = "/api/send";
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    };
 
-     // Form the request for sending data to the server.
-     const options = {
-       // The method is POST because we are sending data.
-       method: "POST",
-       // Tell the server we're sending JSON.
-       headers: {
-         "Content-Type": "application/json",
-         
-       },
-       // Body of the request is the JSON data we created above.
-       body: JSONdata,
-     };
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
 
-     const response = await fetch(endpoint, options);
-     const resData = await response.json();
-
-     if (response.status === 200) {
-       console.log("Message sent.");
-       setEmailSubmitted(true);
-     }
-   };
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true);
+    }
+  };
 
   return (
     <section
@@ -59,13 +56,13 @@ const EmailSection = (props: Props) => {
           get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/yonasoft">
+          <Link href="https://github.com/yonasoft" target="_blank">
             <FaGithub size={36} color="white" />
           </Link>
-          <Link href="https://www.linkedin.com/in/yonasoft/">
+          <Link href="https://www.linkedin.com/in/yonasoft/" target="_blank">
             <FaLinkedin size={36} color="white" />
           </Link>
-          <Link href="https://linktr.ee/yonasoft">
+          <Link href="https://linktr.ee/yonasoft" target="_blank">
             <FaLink size={36} color="white" />
           </Link>
         </div>
