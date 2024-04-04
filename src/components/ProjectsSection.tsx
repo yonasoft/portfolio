@@ -12,7 +12,7 @@ const projectsData = [
       "An Android Chinese English dictionary application with over 121,000 words, featuring listing and practice functionality to assist with vocabulary retention. Adapted from the web version including all key features.",
     image: "/images/projects/jade-android.jpg",
     gitUrl: "https://github.com/yonasoft/jade-dictionary-android",
-    previewIrl:
+    previewUrl:
       "https://play.google.com/store/apps/details?id=com.yonasoft.jadedictionary",
     tag: ["All", "Mobile"],
   },
