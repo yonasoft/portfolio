@@ -39,7 +39,7 @@ const projectsData = [
     id: 4,
     title: "AniTier.com",
     description:
-      "A web application for ranking Anime and Manga titles from a library of over 110,000 titles and import from user lists of over 6 million users. You can also share and upvote/downvote lists.",
+      "A web application for ranking Anime and Manga titles from MyAnimeList's and AniList's library of over 110,000 titles and watch lists from a community of over 6 million users. You can also share and upvote/downvote tier lists.",
     image: "/images/projects/anitier.png",
     gitUrl: "https://github.com/yonasoft/AniTier",
     previewUrl: "https://www.anitier.com/",
