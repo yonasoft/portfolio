@@ -16,7 +16,7 @@ export const POST = async (req: any, res: any) => {
   try {
     console.log("Sending email...", email, subject, message);
     const data = await resend.emails.send({
-      from: fromEmail as string,
+      from: "Acme <onboarding@resend.dev>",
       to: toEmails,
       subject: subject,
       text: `Sent From: ${email}\n 

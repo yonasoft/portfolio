@@ -3,6 +3,7 @@ import Error from "next/error";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaLink } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 type Props = {};
 
@@ -61,6 +62,9 @@ const EmailSection = (props: Props) => {
           </Link>
           <Link href="https://www.linkedin.com/in/yonasoft/" target="_blank">
             <FaLinkedin size={36} color="white" />
+          </Link>
+          <Link href="mailto:yonasoft7@gmail.com" target="_blank">
+            <MdEmail size={36} color="white" />
           </Link>
           <Link href="https://linktr.ee/yonasoft" target="_blank">
             <FaLink size={36} color="white" />
