@@ -65,12 +65,17 @@ const HeroSection = () => {
             </Link>
             <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
               <motion.button
-                onMouseEnter={() => onHover(true)}
-                onMouseLeave={() => onHover(false)}
+                // onMouseEnter={() => onHover(true)}
+                // onMouseLeave={() => onHover(false)}
                 className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-6 py-2"
               >
-                Download Resume
-                {showResumeOptions && (
+                <Link
+                  href="https://www.dropbox.com/scl/fi/fnoanl0k8zcsevkhyua4u/Kevin_Chen_Resume.pdf?rlkey=dejeblkagj4i82sqrkemh3npp&dl=1"
+                  target="_blank"
+                >
+                  Download Resume
+                </Link>
+                {/* {showResumeOptions && (
                   <motion.div
                     variants={resumeOptionsVariants}
                     initial="hidden"
@@ -92,7 +97,7 @@ const HeroSection = () => {
                       <IoBrowsers size={24} />
                     </Link>
                   </motion.div>
-                )}
+                )} */}
               </motion.button>
             </div>
           </div>
