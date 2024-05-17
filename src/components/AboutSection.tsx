@@ -5,23 +5,6 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Mobile Skills",
-    id: "android_skills",
-    content: (
-      <ul>
-        <li>Kotlin</li>
-        <li>XML</li>
-        <li>Jetpack Compose</li>
-        <li>RoomDB</li>
-        <li>Retrofit</li>
-        <li>Dagger-Hilt</li>
-        <li>Gson</li>
-        <li>Coroutines</li>
-        <li>Coil</li>
-      </ul>
-    ),
-  },
-  {
     title: "Web Skills",
     id: "web_skills",
     content: (
@@ -38,6 +21,24 @@ const TAB_DATA = [
     ),
   },
   {
+    title: "Mobile Skills",
+    id: "android_skills",
+    content: (
+      <ul>
+        <li>Kotlin</li>
+        <li>XML</li>
+        <li>Jetpack Compose</li>
+        <li>RoomDB</li>
+        <li>Retrofit</li>
+        <li>Dagger-Hilt</li>
+        <li>Gson</li>
+        <li>Coroutines</li>
+        <li>Coil</li>
+      </ul>
+    ),
+  },
+
+  {
     title: "Education",
     id: "education",
     content: (
@@ -52,7 +53,7 @@ const TAB_DATA = [
 type Props = {};
 
 const AboutSection = (props: Props) => {
-  const [tab, setTab] = useState("android_skills");
+  const [tab, setTab] = useState("web_skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (tab: string) => {
@@ -73,12 +74,12 @@ const AboutSection = (props: Props) => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg ">
-            I am web and Android developer and I have a passion
-            for combining code with my hobbies and interests. I have experience
-            with Jetpack Compose, RoomDB, Dagger-Hilt, React, Next.js, Ruby on
-            Rails, Tailwind, Bootstrap, Firebase, Git and more. I am always
-            learning new technologies, and I am excited to work on new projects.
-            I will adapt to your business and technical needs.
+            I am web and Android developer and I have a passion for combining
+            code with my hobbies and interests. I have experience with Jetpack
+            Compose, RoomDB, Dagger-Hilt, React, Next.js, Ruby on Rails,
+            Tailwind, Bootstrap, Firebase, Git and more. I am always learning
+            new technologies, and I am excited to work on new projects. I will
+            adapt to your business and technical needs.
           </p>
           <div className="flex flex-row justify-start mt-8">
             {TAB_DATA.map((tabData, index) => (
