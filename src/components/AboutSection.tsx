@@ -73,7 +73,7 @@ const AboutSection = (props: Props) => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg ">
-            I am an Android developer with web experience and I have a passion
+            I am web and Android developer and I have a passion
             for combining code with my hobbies and interests. I have experience
             with Jetpack Compose, RoomDB, Dagger-Hilt, React, Next.js, Ruby on
             Rails, Tailwind, Bootstrap, Firebase, Git and more. I am always

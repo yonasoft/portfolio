@@ -45,9 +45,9 @@ const HeroSection = () => {
               sequence={[
                 "Kevin Chen",
                 1000,
-                "Android Developer",
-                1000,
                 "Web Developer",
+                1000,
+                "Android Developer",
                 1000,
               ]}
               wrapper="span"
@@ -65,17 +65,18 @@ const HeroSection = () => {
             </Link>
             <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
               <motion.button
-                // onMouseEnter={() => onHover(true)}
-                // onMouseLeave={() => onHover(false)}
+                onMouseEnter={() => onHover(true)}
+                onMouseLeave={() => onHover(false)}
                 className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-6 py-2"
               >
-                <Link
-                  href="https://www.dropbox.com/scl/fi/fnoanl0k8zcsevkhyua4u/Kevin_Chen_Resume.pdf?rlkey=dejeblkagj4i82sqrkemh3npp&dl=1"
-                  target="_blank"
+                {/* <Link
+                  // href="https://www.dropbox.com/scl/fi/fnoanl0k8zcsevkhyua4u/Kevin_Chen_Resume.pdf?rlkey=dejeblkagj4i82sqrkemh3npp&dl=1"
+                  // target="_blank"
                 >
                   Download Resume
-                </Link>
-                {/* {showResumeOptions && (
+                </Link> */}
+                Download Resume
+                {showResumeOptions && (
                   <motion.div
                     variants={resumeOptionsVariants}
                     initial="hidden"
@@ -83,21 +84,21 @@ const HeroSection = () => {
                     className="flex flex-row justify-around"
                   >
                     <Link
-                      href="https://www.dropbox.com/scl/fi/ru3lenlw4kdn21m4yy2zk/Kevin_Chen_Resume.pdf?rlkey=gz1ckc0i8n1uqs0komz73hhd8&dl=1"
-                      target="_blank"
-                      className="border-2 p-1 my-2 rounded-md hover:bg-slate-400"
-                    >
-                      <IoLogoAndroid size={24} />
-                    </Link>
-                    <Link
                       href="https://www.dropbox.com/scl/fi/9jr2zggh8y1fuykxv2fsq/Kevin_Chen_Resume.pdf?rlkey=snxzlys3176vkrmqmnuuygq3p&dl=1"
                       target="_blank"
                       className="border-2 p-1 my-2 rounded-md hover:bg-slate-400"
                     >
                       <IoBrowsers size={24} />
                     </Link>
+                    <Link
+                      href="https://www.dropbox.com/scl/fi/ru3lenlw4kdn21m4yy2zk/Kevin_Chen_Resume.pdf?rlkey=gz1ckc0i8n1uqs0komz73hhd8&dl=1"
+                      target="_blank"
+                      className="border-2 p-1 my-2 rounded-md hover:bg-slate-400"
+                    >
+                      <IoLogoAndroid size={24} />
+                    </Link>
                   </motion.div>
-                )} */}
+                )}
               </motion.button>
             </div>
           </div>
