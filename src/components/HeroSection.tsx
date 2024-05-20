@@ -69,14 +69,14 @@ const HeroSection = () => {
                 onMouseLeave={() => onHover(false)}
                 className="block w-full bg-[#121212] hover:bg-slate-800 rounded-full px-6 py-2"
               >
-                {/* <Link
-                  // href="https://www.dropbox.com/scl/fi/fnoanl0k8zcsevkhyua4u/Kevin_Chen_Resume.pdf?rlkey=dejeblkagj4i82sqrkemh3npp&dl=1"
-                  // target="_blank"
+                <Link
+                  href="https://www.dropbox.com/scl/fi/fnoanl0k8zcsevkhyua4u/Kevin_Chen_Resume.pdf?rlkey=dejeblkagj4i82sqrkemh3npp&dl=1"
+                  target="_blank"
                 >
                   Download Resume
-                </Link> */}
-                Download Resume
-                {showResumeOptions && (
+                </Link>
+                {/* Download Resume */}
+                {/* {showResumeOptions && (
                   <motion.div
                     variants={resumeOptionsVariants}
                     initial="hidden"
@@ -98,7 +98,7 @@ const HeroSection = () => {
                       <IoLogoAndroid size={24} />
                     </Link>
                   </motion.div>
-                )}
+                )} */}
               </motion.button>
             </div>
           </div>
