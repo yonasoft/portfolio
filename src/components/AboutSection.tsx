@@ -76,8 +76,8 @@ const AboutSection = (props: Props) => {
           <p className="text-base md:text-lg ">
             I am currently an Android developer Intern at a startup, leading the
             design and implementation of a mobile AI-powered chat app as the
-            sole Android Developer. Along with my Android expertise, I bring
-            hands-on experience in full stack development. I’m actively seeking exciting
+            sole Android Developer. Along with my Android experience, I bring
+            additional experience in full stack development. I’m actively seeking exciting
             internship or entry-level opportunities where I can continue to grow
             and make an impact. Feel free to explore my portfolio to see the
             projects I’ve worked on, and don’t hesitate to reach out for any
