@@ -74,14 +74,7 @@ const AboutSection = (props: Props) => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg ">
-            I am currently an Android developer Intern at a startup, leading the
-            design and implementation of a mobile AI-powered chat app as the
-            sole Android Developer. Along with my Android experience, I bring
-            additional experience in full stack development. I’m actively seeking exciting
-            internship or entry-level opportunities where I can continue to grow
-            and make an impact. Feel free to explore my portfolio to see the
-            projects I’ve worked on, and don’t hesitate to reach out for any
-            opportunities or collaborations!
+            I am an Android developer
           </p>
           <div className="flex flex-row justify-start mt-8">
             {TAB_DATA.map((tabData, index) => (
