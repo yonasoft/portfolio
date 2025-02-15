@@ -28,9 +28,9 @@ const TAB_DATA = [
         <li>Kotlin</li>
         <li>Dart</li>
         <li>Android</li>
+        <li>Flutter</li>
         <li>Jetpack Compose</li>
         <li>Retrofit</li>
-        <li>Flutter</li>
       </ul>
     ),
   },

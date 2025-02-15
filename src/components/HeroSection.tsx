@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { IoBrowsers, IoLogoAndroid } from 'react-icons/io5';
 import Link from 'next/link';
+import { Analytics } from '@vercel/analytics/next';
 
 const HeroSection = () => {
   const [showResumeOptions, setShowResumeOptions] = useState(false);
@@ -45,9 +46,9 @@ const HeroSection = () => {
               sequence={[
                 'Kevin Chen',
                 1000,
-                'An Android Developer',
-                1000,
                 'A Software Engineer',
+                1000,
+                'An Android Developer',
                 1000,
                 'A Web Developer',
                 1000,
