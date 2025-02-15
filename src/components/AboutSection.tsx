@@ -1,46 +1,54 @@
-"use client";
-import React, { useState, useTransition } from "react";
-import Image from "next/image";
-import TabButton from "./TabButton";
+'use client';
+import React, { useState, useTransition } from 'react';
+import Image from 'next/image';
+import TabButton from './TabButton';
 
 const TAB_DATA = [
   {
-    title: "Web Skills",
-    id: "web_skills",
+    title: 'Web Skills',
+    id: 'web_skills',
     content: (
       <ul>
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>React</li>
         <li>Next.js</li>
-        <li>Ruby on Rails</li>
         <li>Tailwind</li>
         <li>Bootstrap</li>
         <li>HTML/CSS</li>
       </ul>
     ),
   },
+
   {
-    title: "Mobile Skills",
-    id: "android_skills",
+    title: 'Mobile Skills',
+    id: 'mobile_skills',
     content: (
       <ul>
         <li>Kotlin</li>
-        <li>XML</li>
+        <li>Dart</li>
+        <li>Android</li>
         <li>Jetpack Compose</li>
-        <li>RoomDB</li>
         <li>Retrofit</li>
-        <li>Dagger-Hilt</li>
-        <li>Gson</li>
-        <li>Coroutines</li>
-        <li>Coil</li>
+        <li>Flutter</li>
       </ul>
     ),
   },
 
   {
-    title: "Education",
-    id: "education",
+    title: 'Other',
+    id: 'other_skills',
+    content: (
+      <ul>
+        <li>Firebase</li>
+        <li>Git</li>
+      </ul>
+    ),
+  },
+
+  {
+    title: 'Education',
+    id: 'education',
     content: (
       <ul>
         <li>Altcademy, Remote - Full Stack Web Development</li>
@@ -53,7 +61,7 @@ const TAB_DATA = [
 type Props = {};
 
 const AboutSection = (props: Props) => {
-  const [tab, setTab] = useState("web_skills");
+  const [tab, setTab] = useState('web_skills');
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (tab: string) => {
@@ -63,20 +71,29 @@ const AboutSection = (props: Props) => {
   };
 
   return (
-    <section className="about text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section className='about text-white'>
+      <div className='md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <Image
-          src="/images/about.jpg"
+          src='/images/about.jpg'
           width={500}
           height={500}
-          alt="image of computer"
+          alt='image of computer'
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base md:text-lg ">
-            I am an Android developer
+        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+          <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+          <p className='text-base md:text-lg '>
+            As a versatile Software Engineer, I thrive on quickly mastering new
+            technologies and delivering impactful solutions. With experience
+            spanning web development, native Android, and Flutter, I have a
+            proven track record of building creative projects. During my
+            internship, I developed an innovative Android AI chatbot, and I now
+            work as a freelance AI model trainer. I’m currently seeking a
+            full-time or part-time Software Engineering role where I can
+            contribute my diverse expertise and passion for innovation. I invite
+            you to explore my projects or reach out—let’s create something
+            exceptional together.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className='flex flex-row justify-start mt-8'>
             {TAB_DATA.map((tabData, index) => (
               <TabButton
                 key={index}
@@ -87,7 +104,7 @@ const AboutSection = (props: Props) => {
               </TabButton>
             ))}
           </div>
-          <div className="mt-8">
+          <div className='mt-8'>
             {TAB_DATA.find((tabData) => tabData.id === tab)?.content}
           </div>
         </div>
