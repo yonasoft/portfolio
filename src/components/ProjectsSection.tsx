@@ -33,6 +33,8 @@ const projectsData = [
       'An Android application that provides information on over 80,000 Anime and Manga titles. Users can search for titles, view details, rankings, and sort by season.',
     image: '/images/projects/minimal.jpg',
     gitUrl: 'https://github.com/yonasoft/miniMAL',
+    previewUrl:
+      'https://play.google.com/store/apps/details?id=com.yonasoft.minimal',
     tag: ['All', 'Mobile'],
   },
   {
