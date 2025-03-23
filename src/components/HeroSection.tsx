@@ -114,7 +114,7 @@ const HeroSection = () => {
         >
           <div className='rounded-full object-cover overflow-hidden bg-[#181818] w-[250px] h-[250px] lg:w-[375px] lg:h-[375px] relative'>
             <Image
-              src='/images/kevin_chen.png'
+              src='/images/kevin_chen.jpg'
               alt='hero image'
               className='absolute transform'
               width={400}
