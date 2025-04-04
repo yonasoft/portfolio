@@ -7,55 +7,67 @@ import ProjectCard from './ProjectCard';
 const projectsData = [
   {
     id: 1,
-    title: 'Jade Chinese Dictionary (Android)',
+    title: 'Jade Chinese Dictionary 2 (Android)',
     description:
-      'An Android Chinese English dictionary application with over 121,000 words, featuring listing and practice functionality to assist with vocabulary retention. Adapted from the web version including all key features.',
-    image: '/images/projects/jade-android.jpg',
-    gitUrl: 'https://github.com/yonasoft/jade-dictionary-android',
+      "A comprehensive Chinese-English dictionary app with over 121,000 words featuring multiple input methods including handwriting recognition, OCR, and speech-to-text. Includes complete HSK vocabulary lists (levels 1-9) and practice tools like flashcards, multiple-choice quizzes, and listening exercises to enhance retention. Don't just search words; remember them!",
+    image: '/images/projects/jade-android-2.jpg',
+    gitUrl: 'https://github.com/yonasoft/jade-dictionary-android2',
     previewUrl:
       'https://play.google.com/store/apps/details?id=com.yonasoft.jadedictionary',
-    tag: ['All', 'Mobile'],
+    tag: ['All', 'Android'],
   },
+
   {
     id: 2,
+    title: 'Jade Chinese Dictionary 1 (Android)',
+    description:
+      'The first iteration of my Android Chinese-English dictionary app with 121,000+ words, featuring word lists and basic practice functionality. This initial version was adapted from the web application and laid the foundation for Jade Dictionary 2. While functional, this original version has been superseded by the more feature-rich current release.',
+    image: '/images/projects/jade-android.jpg',
+    gitUrl: 'https://github.com/yonasoft/jade-dictionary-android',
+    tag: ['All', 'Android'],
+  },
+  {
+    id: 3,
     title: 'JadeDictionary.com (Web)',
     description:
-      'A web Chinese English dictionary application with over 121,000 words, with listing and practice functionality to assist with vocabulary retention. Also features built-in Chinese keyboard and handwriting input for user convenience.',
+      'The original web version of my Chinese-English dictionary with over 121,000 words, featuring vocabulary lists and practice tools to enhance retention. Includes built-in Chinese keyboard and handwriting input for seamless user experience. While fully functional, this is an earlier iteration - a completely revamped version with expanded features is currently in development.',
     image: '/images/projects/jade-web.png',
     gitUrl: 'https://github.com/yonasoft/jade-dictionary-web',
     previewUrl: 'https://jadedictionary.com/',
     tag: ['All', 'Web'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'miniMAL',
     description:
-      'An Android application that provides information on over 80,000 Anime and Manga titles. Users can search for titles, view details, rankings, and sort by season.',
+      'A streamlined Android app providing information on over 80,000 Anime and Manga titles. Features include comprehensive search functionality, detailed title information, seasonal browsing, and popularity rankings. This app delivers the core functionality of MyAnimeList in a lightweight, mobile-optimized experience. I plan to update this with a refreshed UI and additional features in the near future.',
     image: '/images/projects/minimal.jpg',
     gitUrl: 'https://github.com/yonasoft/miniMAL',
     previewUrl:
       'https://play.google.com/store/apps/details?id=com.yonasoft.minimal',
-    tag: ['All', 'Mobile'],
+    tag: ['All', 'Android'],
   },
-  {
-    id: 4,
-    title: 'AniTier.com',
-    description:
-      "A web application for ranking Anime and Manga titles from MyAnimeList's and AniList's library of over 110,000 titles and watch lists from a community of over 6 million users. You can also share and upvote/downvote tier lists.",
-    image: '/images/projects/anitier.png',
-    gitUrl: 'https://github.com/yonasoft/AniTier',
-    tag: ['All', 'Web'],
-  },
+
   {
     id: 5,
     title: 'Handball Court Manager',
     description:
-      'An Android application for handball players to digitally manage and track handball court queues and match data.',
+      'A specialized Android app solving a common problem for handball players by digitizing court queue management. Features include player check-in, match tracking, automated queue progression, and historical match data. This app transforms the traditional whiteboard system into a streamlined digital experience for community courts. An updated version with enhanced UI and additional statistical features is currently in development.',
     image: '/images/projects/handball.png',
     gitUrl: 'https://github.com/yonasoft/Wall-Handball-Court-Manager',
     previewUrl:
       'https://play.google.com/store/apps/details?id=com.yonasoft.handballcourtmanager',
-    tag: ['All', 'Mobile'],
+    tag: ['All', 'Android'],
+  },
+
+  {
+    id: 6,
+    title: 'AniTier.com',
+    description:
+      'An interactive web platform for creating, sharing, and rating tier lists of Anime and Manga, drawing from a database of over 110,000 titles. Users can import their MyAnimeList or AniList watchlists, create personalized tier rankings, and participate in community voting. This project combines database integration, user authentication, and dynamic UI elements for a complete social experience.',
+    image: '/images/projects/anitier.png',
+    gitUrl: 'https://github.com/yonasoft/AniTier',
+    tag: ['All', 'Web'],
   },
 ];
 
@@ -92,8 +104,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name='Mobile'
-          isSelected={tag === 'Mobile'}
+          name='Android'
+          isSelected={tag === 'Android'}
         />
         <ProjectTag
           onClick={handleTagChange}
