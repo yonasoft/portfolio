@@ -5,6 +5,24 @@ import TabButton from './TabButton';
 
 const TAB_DATA = [
   {
+    title: 'Android Skills',
+    id: 'android_skills',
+    content: (
+      <ul>
+        <li>Kotlin</li>
+        <li>Jetpack Compose</li>
+        <li>Koin</li>
+        <li>Dagger-Hilt</li>
+        <li>Room DB</li>
+        <li>Retrofit</li>
+        <li>Coroutines</li>
+        <li>Flow</li>
+        <li>MVVM/MVI</li>
+      </ul>
+    ),
+  },
+
+  {
     title: 'Web Skills',
     id: 'web_skills',
     content: (
@@ -21,27 +39,14 @@ const TAB_DATA = [
   },
 
   {
-    title: 'Mobile Skills',
-    id: 'mobile_skills',
-    content: (
-      <ul>
-        <li>Kotlin</li>
-        <li>Dart</li>
-        <li>Android</li>
-        <li>Flutter</li>
-        <li>Jetpack Compose</li>
-        <li>Retrofit</li>
-      </ul>
-    ),
-  },
-
-  {
     title: 'Other',
     id: 'other_skills',
     content: (
       <ul>
         <li>Firebase</li>
         <li>Git</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Dart & Flutter</li>
       </ul>
     ),
   },
@@ -82,16 +87,9 @@ const AboutSection = (props: Props) => {
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base md:text-lg '>
-            As a versatile Software Engineer, I thrive on quickly mastering new
-            technologies and delivering impactful solutions. With experience
-            spanning web development, native Android, and Flutter, I have a
-            proven track record of building creative projects. During my
-            internship, I developed an innovative Android AI chatbot, and I now
-            work as a freelance AI model trainer. I’m currently seeking a
-            full-time or part-time Software Engineering role where I can
-            contribute my diverse expertise and passion for innovation. I invite
-            you to explore my projects or reach out—let’s create something
-            exceptional together.
+            {
+              "Software Engineer specializing in Android development with complementary expertise in web technologies and Flutter. I build projects that blend code with my personal interests, constantly refining my skills and improving my applications. My flagship project is a comprehensive Chinese dictionary app that I've enhanced with practice features and multiple input methods. As the lead Android developer during an internship, I spearheaded the development of an AI chat application from concept to completion. My web development foundation comes from Altcademy bootcamp, where I created several projects including a web version of my dictionary app which I plan to update. I'm a versatile developer who adapts quickly to new technologies and thrives on continuous learning."
+            }
           </p>
           <div className='flex flex-row justify-start mt-8'>
             {TAB_DATA.map((tabData, index) => (
