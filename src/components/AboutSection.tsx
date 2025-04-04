@@ -66,7 +66,7 @@ const TAB_DATA = [
 type Props = {};
 
 const AboutSection = (props: Props) => {
-  const [tab, setTab] = useState('web_skills');
+  const [tab, setTab] = useState('android_skills');
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (tab: string) => {
