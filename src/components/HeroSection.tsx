@@ -42,21 +42,7 @@ const HeroSection = () => {
               Hello, I&apos;m{' '}
             </span>
             <br></br>
-            <TypeAnimation
-              sequence={[
-                'Kevin Chen',
-                1000,
-                'A Software Engineer',
-                1000,
-                'An Android Developer',
-                1000,
-                'A Web Developer',
-                1000,
-              ]}
-              wrapper='span'
-              speed={50}
-              repeat={Infinity}
-            />
+            Kevin Chen
           </h1>
           <p className='text-[#ADB7BE] mb-6 textl-lg lg:text-xl'></p>
           <div>
