@@ -50,7 +50,7 @@ const projectsData = [
 
   {
     id: 5,
-    title: 'Handball Court Manager',
+    title: 'Handball Court Manager (Android)',
     description:
       'A specialized Android app solving a common problem for handball players by digitizing court queue management. Features include player check-in, match tracking, automated queue progression, and historical match data. This app transforms the traditional whiteboard system into a streamlined digital experience for community courts. An updated version with enhanced UI and additional statistical features is currently in development.',
     image: '/images/projects/handball.png',
@@ -62,7 +62,7 @@ const projectsData = [
 
   {
     id: 6,
-    title: 'AniTier.com',
+    title: 'AniTier.com (Android)',
     description:
       'An interactive web platform for creating, sharing, and rating tier lists of Anime and Manga, drawing from a database of over 110,000 titles. Users can import their MyAnimeList or AniList watchlists, create personalized tier rankings, and participate in community voting. This project combines database integration, user authentication, and dynamic UI elements for a complete social experience.',
     image: '/images/projects/anitier.png',
