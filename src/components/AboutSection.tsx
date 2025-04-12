@@ -5,8 +5,8 @@ import TabButton from './TabButton';
 
 const TAB_DATA = [
   {
-    title: 'Android Skills',
-    id: 'android_skills',
+    title: 'Mobile Skills',
+    id: 'mobile_skills',
     content: (
       <ul>
         <li>Kotlin</li>
@@ -15,9 +15,6 @@ const TAB_DATA = [
         <li>Dagger-Hilt</li>
         <li>Room DB</li>
         <li>Retrofit</li>
-        <li>Coroutines</li>
-        <li>Flow</li>
-        <li>MVVM/MVI</li>
       </ul>
     ),
   },
@@ -56,7 +53,6 @@ const TAB_DATA = [
     id: 'education',
     content: (
       <ul>
-        <li>Altcademy, Remote - Full Stack Web Development</li>
         <li>Queens College, New York - B.A. General Linguistics</li>
       </ul>
     ),
@@ -66,7 +62,7 @@ const TAB_DATA = [
 type Props = {};
 
 const AboutSection = (props: Props) => {
-  const [tab, setTab] = useState('android_skills');
+  const [tab, setTab] = useState('mobile_skills');
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (tab: string) => {

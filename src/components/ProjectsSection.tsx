@@ -14,7 +14,7 @@ const projectsData = [
     gitUrl: 'https://github.com/yonasoft/jade-dictionary-android2',
     previewUrl:
       'https://play.google.com/store/apps/details?id=com.yonasoft.jadedictionary',
-    tag: ['All', 'Android'],
+    tag: ['All', 'Mobile'],
   },
 
   {
@@ -24,7 +24,7 @@ const projectsData = [
       'The first iteration of my Android Chinese-English dictionary app with 121,000+ words, featuring word lists and basic practice functionality. This initial version was adapted from the web application and laid the foundation for Jade Dictionary 2. While functional, this original version has been superseded by the more feature-rich current release.',
     image: '/images/projects/jade-android.jpg',
     gitUrl: 'https://github.com/yonasoft/jade-dictionary-android',
-    tag: ['All', 'Android'],
+    tag: ['All', 'Mobile'],
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const projectsData = [
     image: '/images/projects/jade-web.png',
     gitUrl: 'https://github.com/yonasoft/jade-dictionary-web',
     previewUrl: 'https://jadedictionary.com/',
-    tag: ['All', 'Web'],
+    tag: ['All', 'Mobile'],
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const projectsData = [
     gitUrl: 'https://github.com/yonasoft/miniMAL',
     previewUrl:
       'https://play.google.com/store/apps/details?id=com.yonasoft.minimal',
-    tag: ['All', 'Android'],
+    tag: ['All', 'Mobile'],
   },
 
   {
@@ -57,7 +57,7 @@ const projectsData = [
     gitUrl: 'https://github.com/yonasoft/Wall-Handball-Court-Manager',
     previewUrl:
       'https://play.google.com/store/apps/details?id=com.yonasoft.handballcourtmanager',
-    tag: ['All', 'Android'],
+    tag: ['All', 'Mobile'],
   },
 
   {
@@ -104,8 +104,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name='Android'
-          isSelected={tag === 'Android'}
+          name='Mobile'
+          isSelected={tag === 'Mobile'}
         />
         <ProjectTag
           onClick={handleTagChange}
