@@ -36,6 +36,20 @@ const TAB_DATA = [
   },
 
   {
+    title: 'AI Skills',
+    id: 'ai_skills',
+    content: (
+      <ul>
+        <li>Multimodal AI Training</li>
+        <li>Data Labeling</li>
+        <li>Prompt Engineering </li>
+        <li>RLHF</li>
+        <li>Evaluation Rubrics</li>
+      </ul>
+    ),
+  },
+
+  {
     title: 'Other',
     id: 'other_skills',
     content: (
@@ -83,9 +97,13 @@ const AboutSection = (props: Props) => {
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base md:text-lg '>
-            {
-              "Software Engineer specializing in Android development with complementary expertise in web technologies and Flutter. I build projects that blend code with my personal interests, constantly refining my skills and improving my applications. My flagship project is a comprehensive Chinese dictionary app that I've enhanced with practice features and multiple input methods. As the lead Android developer during an internship, I spearheaded the development of an AI chat application from concept to completion. My web development foundation comes from Altcademy bootcamp, where I created several projects including a web version of my dictionary app which I plan to update. I'm a versatile developer who adapts quickly to new technologies and thrives on continuous learning."
-            }
+            {`
+              1+ year experience as an AI Trainer at Alignerr, xAI, and Outliar.ai and promoted to reviewer across 5+ projects. 3+ years Full Stack Software Engineer with multiple projects deployed on Web and Android.
+
+I also built Jade Chinese-English Dictionary, a cross-platform bilingual dictionary and language learning platform that attracted 600+ unique visitors within 30 days of launch and reached 110+ downloads on Android.
+
+Currently seeking AI Training and Software Engineering opportunities.
+`}
           </p>
           <div className='flex flex-row justify-start mt-8'>
             {TAB_DATA.map((tabData, index) => (
