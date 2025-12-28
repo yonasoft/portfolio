@@ -62,7 +62,7 @@ const projectsData = [
 
   {
     id: 6,
-    title: 'AniTier.com (Android)',
+    title: 'AniTier',
     description:
       'An interactive web platform for creating, sharing, and rating tier lists of Anime and Manga, drawing from a database of over 110,000 titles. Users can import their MyAnimeList or AniList watchlists, create personalized tier rankings, and participate in community voting. This project combines database integration, user authentication, and dynamic UI elements for a complete social experience.',
     image: '/images/projects/anitier.png',
